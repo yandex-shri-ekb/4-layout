@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Три колонки №1</title>
+    <style>
+        .col
+        {
+            min-height: 200px;
+            background: #ff8080;
+        }
+
+        .col.left
+        {
+            float: left;
+            width: 25%;
+        }
+
+        .col.right
+        {
+            float: right;
+            width: 25%;
+            height: 400px;
+        }
+
+        .col.center
+        {
+            margin: 0 25%;
+            background: #80b2ff;
+        }
+
+        .cf:before,
+        .cf:after
+        {
+            content: '';
+            display: table;
+        }
+
+        .cf:after
+        {
+            clear: both;
+        }
+
+        .cf
+        {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="cf">
+    <div class="col left">Не влезающее содержимое выходит за границы и может повлиять содержимое в соседней колонке</div>
+    <div class="col right">Колонки разной высоты. Необходимо применять clearfix чтобы следующие блоки шли после самой большой колонки</div>
+    <div class="col center">Можно применить float:left для всех колонок, но будет ещё больше сюрпризов, если в колонке окажется несоизмеримый контент</div>
+</div>
+</body>
+</html>

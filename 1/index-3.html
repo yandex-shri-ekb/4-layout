@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Три колонки №3</title>
+    <style>
+        .layout
+        {
+            position: relative;
+        }
+
+        .col
+        {
+            min-height: 100px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .col.left
+        {
+            left: 0;
+            width: 25%;
+            background: #f00;
+        }
+
+        .col.right
+        {
+            right: 0;
+            width: 25%;
+            background: #f00;
+        }
+
+        .col.center
+        {
+            left: 25%;
+            right: 25%;
+            height: 300px;
+            background: #27f;
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <div class="col left">Независимые друг от друга колонки</div>
+    <div class="col center">Применять, если следом за колонкоми нет блоков или они такиеже абсолютно-позиционированные</div>
+    <div class="col right">Высота и ширена не подстраивается под контент</div>
+</div>
+</body>
+</html>
