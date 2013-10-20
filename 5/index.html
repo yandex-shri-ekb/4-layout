@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Три кнопки</title>
+    <style>
+        .menu
+        {
+            display: table;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 33.3%; /* = 100/кол-во кнопок */
+        }
+
+        .menu li
+        {
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            height: 20px;
+            padding: 5px;
+            margin: -30px 5px 0;
+            background: #f5c;
+        }
+
+        .menu .btn1
+        {
+            margin-top: 0;
+        }
+
+        .menu .btn2
+        {
+            left: 100%;
+        }
+
+        .menu .btn3
+        {
+            left: 200%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="btn1">Микро</li>
+        <li class="btn2">Очень большая кнопка</li>
+        <li class="btn3">Кнопочка</li>
+    </ul>
+</body>
+</html>
