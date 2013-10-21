@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Задание 2</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/css2.css">
+  <script>
+    /* IE fix */
+    var l = "article section footer".split(' ');
+    for (var i = l.length; i--;) {document.createElement(l[i])}
+  </script>
+</head>
+<body>
+  <h1>
+    Задание №2 «Всегда в центре»
+  </h1>
+  <article>
+    <h1>По ширине страницы, если блок имеет фиксированную ширину</h1>
+    <div class="page"><textarea class="resizer" readonly></textarea>
+      <div class="page-inner">
+        <div class="t1-block">Блок с фиксированной шириной расположен по центру</div>
+      </div>
+    </div>
+    <section>
+      <h2>Плюсы:</h2>
+      <ul>
+        <li>кросс-браузерно;</li>
+        <li>просто для написания и понимания.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Минусы:</h2>
+      <ul>
+        <li>нужно следить за шириной внешнего блока, если он будет меньше, то левая часть блока скроется;</li>
+        <li>блок вырывается из потока;</li>
+        <li>отступ нужно считать вручную.</li>
+      </ul>
+    </section>
+  </article>
+  <article>
+    <h1>По ширине страницы, если блок имеет ширину, которая подстраивается под размер содержимого</h1>
+    <input type="checkbox" id="t2-whitespace">
+    <label for="t2-whitespace"> Запретить подстраиваться под половину ширины родителя (white-space: nowrap)</label>
+    <br>
+    <br>
+    <div class="page"><textarea class="resizer" readonly></textarea>
+      <div class="page-inner">
+        <div class="t2-block">
+          <div class="t2-inner">
+            Ширина блока подстраивается по контент
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Плюсы:</h2>
+      <ul>
+        <li>кросс-браузерно.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Минусы:</h2>
+      <ul>
+        <li>блок старается сделаться шириной в половину ширины родителя;</li>
+        <li>блок вырывается из потока.</li>
+      </ul>
+    </section>
+  </article>
+  <article>
+    <h1>По ширине страницы, если блок имеет ширину, которая подстраивается под размер содержимого (вариант без абсолютного позиционирования)</h1>
+    <div class="page"><textarea class="resizer" readonly></textarea>
+      <div class="page-inner">
+        <div class="t3-wrapper">
+          <div class="t3-block">
+            Ширина блока подстраивается по контент
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Плюсы:</h2>
+      <ul>
+        <li>кросс-браузерно;</li>
+        <li>ширина подстраивается дополнительно и под родителя;</li>
+        <li>не вырывается из потока.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Минусы:</h2>
+      <ul>
+        <li>для 6-7 ишаков нужно эмулировать инлайн-блок.</li>
+      </ul>
+    </section>
+  </article>
+  <article>
+    <h1>По ширине страницы, если блок имеет фиксированную ширину (вариант без абсолютного позиционирования)</h1>
+    <div class="page"><textarea class="resizer" readonly></textarea>
+      <div class="page-inner">
+        <div class="t4-block">
+          Ширина блока известна
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Плюсы:</h2>
+      <ul>
+        <li>кросс-браузерно;</li>
+        <li>блок не вылетает в не-скролящиеся области;</li>
+        <li>не вырывается из потока.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Минусы:</h2>
+      <ul>
+        <li>ИМХО, нет =).</li>
+      </ul>
+    </section>
+  </article>
+  <article>
+    <h1>По высоте страницы, если блок имеет фиксированную высоту</h1>
+    <div class="page"><textarea class="resizer" readonly></textarea>
+      <div class="page-inner">
+        <div class="t5-block">
+          Размеры блока известны
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Плюсы:</h2>
+      <ul>
+        <li>работает, и это не может не радовать;</li>
+        <li>кросс-браузерно, насколько мне известно;</li>
+        <li>отлично подходит для попапов и модалок.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Минусы:</h2>
+      <ul>
+        <li>вырывается из потока, хотя минус-ли?</li>
+      </ul>
+    </section>
+  </article>
+  <article>
+    <h1>По высоте страницы, если высота зависит от контента</h1>
+    <div class="page"><textarea class="resizer" readonly></textarea>
+      <div class="page-inner">
+        <div class="t6-helper"></div><!-- 
+     --><div class="t6-block">
+            Высота блока считается исходя из контента
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>Плюсы:</h2>
+      <ul>
+        <li>появляется скролл;</li>
+        <li>можно зафигачить и по горизонтальному центру;</li>
+        <li>подходит для модалок с хренпоймикаким контентом.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Минусы:</h2>
+      <ul>
+        <li>нужен отдельный врапер;</li>
+        <li>нужен хелпер;</li>
+        <li>не работает в ИЕ7.</li>
+      </ul>
+    </section>
+  </article>
+  <footer>
+    The end.
+  </footer>
+</body>
+</html>
