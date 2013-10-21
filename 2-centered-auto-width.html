@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ширина блока подстраивается под содержимое</title>
+    <style>
+        html, body
+        {
+            padding: 0;
+            margin: 0;
+            font: 14px/1.25 Arial, sans-serif;
+        }
+
+        .layout-wrapper
+        {
+            position: absolute;
+            left: 50%;
+        }
+
+
+        .layout
+        {
+            position: relative;
+            padding: 10px;
+            left: -50%;
+
+            background: #c0ceff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="layout-wrapper">
+        <div class="layout">
+            <h1>Слой по центру страницы</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
