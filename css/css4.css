@@ -1,0 +1,32 @@
+body 
+{
+    background: #ecf1f5;
+    font: 24px/1.333 arial, sans-serif;
+}
+
+.pic
+{
+    float: left;
+}
+
+.wrapper 
+{
+    width: 500px;
+    background: #0f5a94;
+    margin: 0 auto;
+}
+
+.link
+{
+    float: left;
+    margin-right: .2em;
+    color: #fff;
+}
+
+.content 
+{
+    clear: left;
+    padding: 50px 0 200px;
+    text-align: center;
+    color: #fff;
+}
