@@ -9,17 +9,15 @@
 <style>
 .content
 {
-    background: #eee;
-    padding: 20px;
-    border: 1px solid #ccc;
-    overflow-y: auto;
     position: absolute;
-    margin-left: -120px;
-    left: 50%;
-    top: 50%;
-    margin-top: -70px;
-    height: 100px;
     width: 200px;
+    left: 50%;
+    top: 20px;
+    margin-left: -120px;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #eee;
     text-align: center;
 }
 </style>
@@ -30,11 +28,11 @@
         <p>В случае, когда ширина блока фиксирована, всё очень просто — позиционируем его на расстоянии 50% слева
             (справа) от ширины родителя, а затем задаём отрицательный левый (правый) внешний отступ в половину ширины
             блока.</p>
-        <p>Можно наоборот — задать отступ в 50%, а свойство left в минус половину ширины блока.</p>
-        <p>В данном случае margin-left и left абсолютно идентичны — они отсчитываются от левого края родительского элемента,
+        <p>Можно наоборот — задать внешний отступ в 50%, а свойство <code>left</code> в минус половину ширины блока.</p>
+        <p>В данном случае <code>margin-left</code> и <code>left</code> абсолютно идентичны — они отсчитываются от левого края родительского элемента,
             а их процентное значение берётся от ширины родительского блока.</p>
         <p>Работает в IE7.</p>
     </div>
-    <div class="content" id="content">Швабра</div>
+    <div class="content" id="content">Швабра.</div>
 </body>
 </html>
