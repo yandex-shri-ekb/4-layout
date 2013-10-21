@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Задание №1: «Эй вы, трое»</title>
+<link rel="stylesheet" href="main.css">
+<script src="common.js"></script>
+<style>
+.content
+{
+    background: #eee;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: -70px auto 0 auto;
+    width: 200px;
+    height: 100px;
+}
+</style>
+</head>
+<body>
+    <div class="desc">
+        <p><span class="inc" onclick="addContent()">Добавить содержимое</span></p>
+        <p>Растягиваем блок по всей ширине с помощью left: 0 и right: 0, а затем задаём margin: auto.</p>
+        <p>Не работает в IE7.</p>
+    </div>
+    <div class="content" id="content">Швабра.</div>
+</body>
+</html>

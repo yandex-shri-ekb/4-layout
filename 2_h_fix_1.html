@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Задание №1: «Эй вы, трое»</title>
+<link rel="stylesheet" href="main.css">
+<script src="common.js"></script>
+<style>
+.content
+{
+    background: #eee;
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    height: 160px;
+    width: 300px;
+    text-align: center;
+    overflow-y: auto;
+}
+</style>
+</head>
+<body>
+    <div class="desc">
+        <p><span class="inc" onclick="addContent()">Добавить содержимое</span></p>
+        <p>В случае, когда высота блока фиксирована, всё очень просто — мы позиционируем блок на расстоянии 50%
+            сверху (снизу) от высоты родителя, а затем задаём отрицательный верхний (нижний) внешний отступ в половину
+            высоты блока.</p>
+        <p>В данном случае (в отличие от горизонтального случая), свойства <code>margin-top</code> и <code>top</code>,
+            не идентичны, посколько первое отсчитывается от ширины родителя, а не от его высоты, в отличие
+            от свойства <code>top</code>, которое отсчитывается от высоты родителя.</p>
+        <p>Cпособ работает в IE7.</p>
+    </div>
+    <div class="content" id="content">Швабра.</div>
+</body>
+</html>
