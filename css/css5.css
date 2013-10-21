@@ -1,0 +1,52 @@
+body
+{
+    font: 36px arial;
+}
+
+.link-list 
+{
+    position: absolute;
+    min-width: 33%;
+}
+
+.link
+{
+    display: block;
+    color: #fff;
+    margin-top: -300%;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:after 
+{
+    position: absolute;
+    content: '';
+    content: attr(title);
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding: 20px 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    left: 0;
+    top: 0;
+    background: #cf254d;
+}
+
+.link:hover:after
+{
+    text-decoration: underline;
+}
+
+.link:nth-child(2):after 
+{
+    left: 100%;
+}
+
+.link:nth-child(3):after 
+{
+    left: 200%;
+}
