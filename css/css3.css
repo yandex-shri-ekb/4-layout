@@ -1,0 +1,31 @@
+body 
+{
+    position: relative;
+    padding-bottom: 400px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#t3-content:checked ~ .content
+{
+    display: block;
+}
+
+.content 
+{
+    display: none;
+}
+
+.bottom_footer 
+{
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width: 100%;
+    border: 1px dashed #0f0;
+    margin: -400px -45px 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
