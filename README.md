@@ -58,3 +58,8 @@
   * [Troubleshooting CSS](http://tympanus.net/codrops/2013/07/17/troubleshooting-css/) (или можно почитать перевод на Хабре [http://habrahabr.ru/post/189118/](Проблемы CSS))
   * [Принципы работы современных браузеров](http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/)
   * [Учебник Вани Сагалаева](http://softwaremaniacs.org/blog/category/primer/)
+
+
+## Тестирование
+
+[Страница для просмотра результатов](https://rawgithub.com/pkolt/4-layout/master/index.html)
