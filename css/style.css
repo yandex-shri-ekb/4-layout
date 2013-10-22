@@ -1,0 +1,588 @@
+html,
+body,
+h1,
+h2,
+ul,
+ol
+{
+    margin: 0;
+}
+
+ol, ul
+{
+    list-style: none outside none;
+}
+
+a
+{
+    color: #6da3bd;
+}
+
+a:hover
+{
+    color: #4d7285;
+    text-decoration: none;
+}
+
+body
+{
+    background: #fff;
+    font: 400 14px Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #000;
+    padding: 10px;
+}
+
+h1
+{
+    font: 400 36px Verdana, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0 0 10px;
+}
+
+h1 span
+{
+    color: #f00;
+}
+
+h2
+{
+    font: 700 14px Verdana, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section
+{
+    margin: 30px;
+}
+
+ul
+{
+    padding: 10px 0 0;
+    list-style-type: circle;
+}
+
+ul li
+{
+    padding: 5px 0;
+}
+
+ol
+{
+    list-style-type: decimal;
+}
+
+
+/*Задание 1*/
+.three-column
+{
+    min-width: 300px;
+    height: 300px;
+}
+
+/*Через float right и left*/
+.three-column.var1 .left
+{
+    width: 25%;
+    min-height: 300px;
+    background: #ccf;
+    float: left;
+}
+
+.three-column.var1 .right
+{
+    width: 25%;
+    min-height: 300px;
+    background: #cfc;
+    float: right;
+}
+
+.three-column.var1 .center
+{
+    background: #ffc;
+    min-height: 300px;
+}
+
+/*Только через float left или right*/
+.three-column.var2 div
+{
+    float: left;
+}
+
+.three-column.var2 .col1
+{
+    width: 25%;
+    min-height: 300px;
+    background: #ccf;
+}
+
+.three-column.var2 .col2
+{
+    width: 50%;
+    min-height: 300px;
+    background: #cfc;
+}
+
+.three-column.var2 .col3
+{
+    width: 25%;
+    min-height: 300px;
+    background: #ffc;
+}
+
+/*Таблицы*/
+.three-column.var3
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.three-column.var3 .col1
+{
+    width: 25%;
+    background: #ccf;
+    vertical-align: top;
+}
+
+.three-column.var3 .col2
+{
+    width: 50%;
+    background: #cfc;
+    vertical-align: top;
+}
+
+.three-column.var3 .col3
+{
+    width: 25%;
+    background: #ffc;
+    vertical-align: top;
+}
+
+/*Через inline-block*/
+.three-column.var4 .col1
+{
+    display: inline-block;
+    width: 25%;
+    background: #ccf;
+    height: 100%;
+}
+
+.three-column.var4 .col2
+{
+    display: inline-block;
+    width: 50%;
+    margin: 0 -4px;
+    background: #cfc;
+    height: 100%;
+}
+
+.three-column.var4 .col3
+{
+    display: inline-block;
+    width: 25%;
+    background: #ffc;
+    height: 100%;
+}
+
+/*Через inline-block, без margin*/
+.three-column.var5
+{
+    font: 0/0 a;
+    
+}
+
+.three-column.var5 .col1
+{
+    display: inline-block;
+    font: 400 13px Arial, Helvetica, sans-serif;
+    width: 25%;
+    background: #ccf;
+    height: 100%;
+}
+
+.three-column.var5 .col2
+{
+    display: inline-block;
+    font: 400 13px Arial, Helvetica, sans-serif;
+    width: 50%;
+    background: #cfc;
+    height: 100%;
+}
+
+.three-column.var5 .col3
+{
+    display: inline-block;
+    font: 400 13px Arial, Helvetica, sans-serif;
+    width: 25%;
+    background: #ffc;
+    height: 100%;
+}
+
+/*Через display: flex*/
+.three-column.var6
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.three-column.var6 .col1
+{
+    width: 25%;
+    background: #ccf;
+}
+
+.three-column.var6 .col2
+{
+    width: 50%;
+    background: #cfc;
+}
+
+.three-column.var6 .col3
+{
+    width: 25%;
+    background: #ffc;
+}
+
+/*Через позционированик*/
+.three-column.var7
+{
+    position: relative;
+}
+
+.three-column.var7 .col1
+{
+    position: absolute;
+    width: 25%;
+    background: #ccf;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+.three-column.var7 .col2
+{
+    position: absolute;
+    width: 50%;
+    background: #cfc;
+    top: 0;
+    left: 25%;
+    min-height: 300px;
+}
+
+.three-column.var7 .col3
+{
+    position: absolute;
+    width: 25%;
+    background: #ffc;
+    top: 0;
+    right: 0;
+    min-height: 300px;
+}
+
+
+/*Задание 2*/
+.centerblock
+{
+    background: #80C0FF;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.unfix-width
+{
+    width: 25%;
+}
+
+.unfix-height
+{
+    height: 25%;
+}
+
+/*Абсолютная центровка*/
+.center1
+{
+    position: relative;
+    min-height: 300px;
+}
+
+.center1 .centerblock
+{
+    margin: auto;
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    right: 0;
+}
+
+/*Центрируем с помощью translate*/
+/*В firefox центрируется по вертикале и горизонтале, в chrome - только по вкртикеле*/
+.center2
+{
+    position: relative;
+    min-height: 300px;
+}
+
+.center2 .centerblock
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Центровка с помощью вида отображения flex*/
+.center3
+{
+    min-height: 300px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center; /*без этого параметра цетровка будет только по горизонтале*/
+}
+
+.center3 .centerblock
+{
+    margin: 0 0 0 -50px; /*в chrome - выравнивается только по вертикале*/
+    /*margin: -50px 0 0 -50px; в firefox - выравнивается по вертикале и горизонтале*/
+}
+
+/*Центровка с помощью calc*/
+.center4
+{
+    min-height: 300px;
+    position: relative;
+}
+
+.center4 .centerblock
+{
+    top: -webkit-calc(50% - (100px / 2));
+    left: -webkit-calc(50% - (100px / 2));
+    top: -moz-calc(50% - (100px / 2));
+    left: -moz-calc(50% - (100px / 2));
+    top: calc(50% - (100px / 2));
+    left: calc(50% - (100px / 2));
+}
+
+/*очень не точный способ*/
+.center4 .centerblock.unfix
+{
+    width: 10%;
+    height: 30%;
+    top: -webkit-calc(45%);
+    left: -webkit-calc(45%);
+    top: -moz-calc(45%);
+    left: -moz-calc(45%);
+    top: calc(45%%);
+    left: calc(45%);
+}
+
+/*Центровка по вертикале с помощью таблицы*/
+.center5
+{
+    height: 300px;
+    width: 100%;
+}
+
+.center5 td
+{
+    /*text-align: center; подошло бьы, если бы нам нужно было выравнять текст/картинку*/
+    vertical-align: middle;
+}
+
+/*Через псевдоэлемент (:before)*/
+.center6
+{
+    text-align: center;
+}
+
+.center6:before
+{
+    content: "";
+    display: inline-block;
+    height: 300px;
+    vertical-align: middle;
+}
+
+.center6 .centerblock
+{
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 0 0 -50px;
+}
+
+/*Центровка по вертикале через плавающий div*/
+.center7
+{
+    height: 300px;
+}
+
+.center7 .floater
+{
+    height: 50%;
+    width: 100%;
+}
+
+.center7 .centerblock
+{
+    clear: both;
+    height: 100px;
+}
+
+
+/*Задание 3*/
+/*Через отрицательный margin*/
+.foot1
+{
+    height: 100%;
+}
+
+.foot1 body
+{
+    margin: -30px 0 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.foot1 .wrapper
+{
+    min-height: 100%;
+}
+
+.foot1 footer
+{
+    background: #cfc;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin: -60px 0 0;
+    position: relative;
+}
+
+/*Через позиционирование*/
+.foot2 body
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.foot2 footer
+{
+    background: #cfc;
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    line-height: 60px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+/*Через таблицу*/
+.foot3
+{
+    height: 100%;
+}
+
+.foot3 body
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.foot3 table
+{
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+.foot3 table .content
+{
+    vertical-align: top;
+}
+
+.foot3 table .footer
+{   
+    height: 60px;
+    background: #cfc;
+    text-align: center;
+}
+
+/*Задание 4*/
+.motionBlock
+{
+    float: left;
+    background: #80c0ff;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 0 0;
+}
+
+.job4
+{
+    margin: 0 auto;
+    width: 650px;
+    background: #E0E0E0;
+    height: 300px;
+}
+
+.job4 div
+{
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.content
+{
+    clear: both;
+    padding: 10px;
+}
+
+
+/*Задание 5*/
+.job5
+{
+    text-align: center;
+    display: table;
+    width: 33.3%;
+}
+
+.job5 div
+{
+    background: #80c0ff;
+    padding: 10px;
+    margin: -37px 10px 0;
+    position: relative;
+}
+
+.job5 .btn2
+{
+    left: 100%;
+}
+
+.job5 .btn3
+{
+    left: 200%;
+}
