@@ -9,6 +9,12 @@
 </head>
 
 <style>
+.header
+{
+    font: 1.25em/1.1 ;
+    text-align: center;
+}
+
 /* Вариант № 1 Таблица - вариант древний и беспощадный, работает везде,
 ** но не семантичен и говорят таблицы рендерятся по особому
 */
@@ -40,14 +46,20 @@
 ** пробелов, или с помощью margin-left сдвигаем или уменьшаем немного ширину или font-size: 0
 ** (возможны проблемы Android'a)
 **  и для ie7 и меньше - zoom 1
-** ВАРИАНТ № 6 - ультраСовременный - flex
+** ВАРИАНТ № 6 - ультраСовременный - flexbox почти что всем хорош (наверное кроме того что не поддерживается)
+** ДРУГИЕ ВАРИАНТЫ: возможно использование современных column, grid;
 */
-/*
-.wrapper                        /*ВАРИНАТ № 4
+
+.wrapper                        /*ВАРИНАТ № 4 и № 6*/
 {
-    position: relative;
+    font: 1em/1.25 Arial, sans-serif;
+   /* position: relative;        /*для Варианта № 4*/
+    display: -ms-flexbox; 
+    display: flex;             /*ВАРИАНТ 6*/
+    display: -webkit-flex;     /*ВАРИАНТ 6*/
+    display: flexbox;          /*ВАРИАНТ 6*/
 }
-*/
+
 .first-column,
 .third-column
 {
@@ -56,8 +68,8 @@
    /* position: absolute;     /*ВАРИАНТ 4 ПОЗИЦИОНИРОВАНИЕ*/  
     width: 25%;
     background: #ce0;
-    display: inline-block;        /*ВАРИАНТ 5 Современный*/    
-    vertical-align: top;          /*ВАРИАНТ 5*/
+ /*   display: inline-block;        /*ВАРИАНТ 5 Современный*/    
+ /*   vertical-align: top;          /*ВАРИАНТ 5*/
 }
 
 .second-column
@@ -67,10 +79,10 @@
    /* position: absolute;    /*ВАРИАНТ 4*/
    /* left: 25%;             /*ВАРИАНТ 4*/
     background: #ff0;
-    width: 50%;            
-    display: inline-block;       /*ВАРИАНТ 5*/ 
-    width: 49%;                  /*ВАРИАНТ 5*/  
-    vertical-align: top;         /*ВАРИАНТ 5*/
+    width: 50%;           
+   /* display: inline-block;       /*ВАРИАНТ 5*/ 
+   /* width: 49%;                  /*ВАРИАНТ 5*/  
+   /* vertical-align: top;         /*ВАРИАНТ 5*/
 }
 /*Для ВАРИАНТА 4 ДОБАВЛЯЕМ СТИЛИ*/
 /*.third-column
@@ -79,8 +91,27 @@
     right: 0;
 }*/
 
+/*Красота*/
+
+.first-column,
+.second-column,
+.third-column
+{
+    padding: 0.5em 0.5em;
+}
+
+.header
+{
+    font: 2em/1.1 sans-serif;
+    text-decoration: underline;
 
 
+}
+.header:first-letter
+{
+    font: bold 1.2em/1.1 sans-serif;
+    color: red;
+}
 </style>
 <body>
   <h1 class="header">3 колонки</h1>
