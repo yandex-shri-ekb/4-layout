@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="4-2 Всегде в центре" charset="utf-8"/>
+
+<title>4-2 Всегда в центре</title>
+</head>
+
+<style>
+/* Рассматриваем 2 случай: ширина известна
+** Вариант 1: классически margin 0 auto (вариант хороший);
+*/
+
+.need-to-center
+{
+    background: green;
+    margin: auto;  
+    height: 60px;
+    width: 200px;         
+}
+/*Красота*/
+body
+{
+    font: 1.2em/1.1 sans-serif;  
+}
+
+.header
+{
+    font: 2em/1.1 sans-serif;
+    text-decoration: underline;
+}
+
+.header:first-letter
+{
+    font: bold 1.2em/1.1 sans-serif;
+    color: red;
+}
+
+</style>
+<body>
+  <h1 class="header">Всегда в центре</h1>
+  
+    <div class="need-to-center">Я в горизонтальном центре всего 2</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="4-2 Всегде в центре" charset="utf-8"/>
+
+<title>4-2 Всегда в центре</title>
+</head>
+
+<style>
+/* Рассматриваем 1 случай: ширина неизвестна 
+** Вариант 1: элемент- инлайный, применяем просто text-align:center;
+** для ие6, ие7 данный способ сработает и для блочных элементов
+** Вариант 2: используем обертку (или таблицу) и выравниваем как ячейку;
+**                     2 случай
+** Вариант 1: классически margin auto;
+** Вариант 2: через позиционирование;
+** Вариант 2 дл 1-го случай работает тоже.
+*/
+/*Для варианта 2 необходима обертка в данном случае body*/
+.wrapper
+{
+   
+   display: table;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+}
+
+.need-to-center
+{
+   display: table-cell;
+   height: 60px;
+}
+/*Красота*/
+body
+{
+    font: 1.2em/1.1 sans-serif;  
+}
+
+.header
+{
+    font: 2em/1.1 sans-serif;
+    text-decoration: underline;
+}
+
+.header:first-letter
+{
+    font: bold 1.2em/1.1 sans-serif;
+    color: red;
+}
+</style>
+<body>
+  <h1 class="header">Всегда в центре</h1>
+  <div class="wrapper">
+    <div class="need-to-center">Я в центре всего</div>
+</div>
+</body>
+</html>
