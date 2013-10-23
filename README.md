@@ -4,6 +4,10 @@
 
 ### #1
 
+1. [Table](https://rawgithub.com/sameoldmadness/4-layout/master/1_three_columns/table.html)
+2. [Float](https://rawgithub.com/sameoldmadness/4-layout/master/1_three_columns/float.html)
+3. [Table-cell](https://rawgithub.com/sameoldmadness/4-layout/master/1_three_columns/table-cell.html)
+
 ### #2
 
 1. [Negative margin](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/negative_margin.html)
