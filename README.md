@@ -6,13 +6,13 @@
 
 ### #2
 
-1. Negative margin [src]() [try]()
-2. Zero offsets [src]() [try]()
-3. Table [src]() [try]()
-4. Transform [src]() [try]()
-5. Table-cell [src]() [try]()
-6. Inline [src]() [try]()
-7. Flexbox [src]() [try]()
+1. [Negative margin](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/negative_margin.html)
+2. [Zero offsets](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/zero_offsets.html)
+3. [Table](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/table.html)
+4. [Transform](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/transform.html)
+5. [Table-cell](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/table_cell.html)
+6. [Inline](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/inline.html)
+7. [Flexbox](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/flexbox.html)
 
 #### Links
 
