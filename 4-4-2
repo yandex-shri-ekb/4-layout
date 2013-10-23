@@ -53,6 +53,7 @@ margin: 0;
 padding: 0;
 
 /*left: 0px;*/
+float: left;
 }
 
 .menu-item
@@ -64,29 +65,16 @@ padding: 0;
   
 
 border: 2px red solid;
+float: left;
 
 
 }
 
-/*.menu-item_free
-{
- 
-    display: inline-block;
-    background: red;
-    height: 30px;
-    width: 60px;
- 
-    background: solid;
-    display: inline-block;
-    margin-left: 0px;
-    position: relative;
-    float: left;
-}
-*/
+
 .test{
-/*  position: absolute;
-  left: 0;*/
-  float: left;
+
+  position: absolute;
+  left: 0;
 
   background: red;
   height: 30px;

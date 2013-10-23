@@ -53,6 +53,7 @@ margin: 0;
 padding: 0;
 
 /*left: 0px;*/
+float: left;
 }
 
 .menu-item
@@ -64,33 +65,21 @@ padding: 0;
   
 
 border: 2px red solid;
+float: left;
 
 
 }
 
-/*.menu-item_free
-{
- 
-    display: inline-block;
-    background: red;
-    height: 30px;
-    width: 60px;
- 
-    background: solid;
-    display: inline-block;
-    margin-left: 0px;
-    position: relative;
-    float: left;
-}
-*/
+
 .test{
-/*  position: absolute;
-  left: 0;*/
-  float: left;
+
+  position: relative;
+  left: 0;
 
   background: red;
   height: 30px;
   margin: 20px 20px 0 0;
+  width: 100px;
  }
 
 .first-column
@@ -101,15 +90,18 @@ border: 2px red solid;
 <body>
   <h1 class="header">Двигайся, давай</h1>
 
-<div class="test">FREE</div>
-<div class="wrapper">
-  <!--<div class="menu-item_free">FREE</div>-->
-   
+  <div style="position: relaive">
+<div class="test">FREE</div>   
   <ul class="menu">
+
     <!--<li class="menu-item_free"> <div class="test">FREE</div></li>-->
     <li class="menu-item">Главная</li>
     <li class="menu-item">Вторая</li>
   </ul>
+ </div> 
+<div class="wrapper">
+  <!--<div class="menu-item_free">FREE</div>-->
+
   <div class="first-column">Dedicated Web Workers provide a simple means for web content to run scripts in background threads. Once created, a worker can send messages to the spawning task by posting messages to an event handler specified by the creator. However, they work within a global context different from the current window (using the window shortcut instead of self in order to get the current global scope within a Worker will return, in fact, an error).</div>
   
 </div>
