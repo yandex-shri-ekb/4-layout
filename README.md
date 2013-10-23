@@ -16,16 +16,16 @@
 
 #### Links
 
+* [Absolute Horizontal And Vertical Centering In CSS](http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css)
+* [How to Center Anything With CSS](http://designshack.net/articles/css/how-to-center-anything-with-css/)
+* [Vertical Centering With CSS](http://blog.themeforest.net/tutorials/vertical-centering-with-css/)
+* [Vertical Centering in CSS](http://www.jakpsatweb.cz/css/css-vertical-center-solution.html)
+
 ### #3
 
 ### #4
 
 ### #5
-
-* [Absolute Horizontal And Vertical Centering In CSS](http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css)
-* [How to Center Anything With CSS](http://designshack.net/articles/css/how-to-center-anything-with-css/)
-* [Vertical Centering With CSS](http://blog.themeforest.net/tutorials/vertical-centering-with-css/)
-* [Vertical Centering in CSS](http://www.jakpsatweb.cz/css/css-vertical-center-solution.html)
 
 ## Модель отображения
 
