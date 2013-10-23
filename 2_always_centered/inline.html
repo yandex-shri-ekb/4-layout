@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline</title>
+    <style>
+        html,
+        body
+        {
+            height: 100%;
+        }
+        .container
+        {
+            text-align: center;
+            height: 100%;
+        }
+        .container:before
+        {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: -0.25em;
+        }
+        .box
+        {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            height: 180px;
+            width: 180px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, repellat incidunt velit quasi numquam quibusdam officia alias optio laudantium ex placeat dolores nostrum doloremque eos consequatur facere atque molestiae officiis.
+        </div>
+    </div>
+</body>
+</html>

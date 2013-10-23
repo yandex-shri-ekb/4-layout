@@ -1,5 +1,32 @@
 # 4-layout
 
+## Solutions
+
+### #1
+
+### #2
+
+1. Negative margin [src]() [try]()
+2. Zero offsets [src]() [try]()
+3. Table [src]() [try]()
+4. Transform [src]() [try]()
+5. Table-cell [src]() [try]()
+6. Inline [src]() [try]()
+7. Flexbox [src]() [try]()
+
+#### Links
+
+### #3
+
+### #4
+
+### #5
+
+* [Absolute Horizontal And Vertical Centering In CSS](http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css)
+* [How to Center Anything With CSS](http://designshack.net/articles/css/how-to-center-anything-with-css/)
+* [Vertical Centering With CSS](http://blog.themeforest.net/tutorials/vertical-centering-with-css/)
+* [Vertical Centering in CSS](http://www.jakpsatweb.cz/css/css-vertical-center-solution.html)
+
 ## Модель отображения
 
 Четвёртое домашнее задание по курсу ШРИ: Модель отображения.
