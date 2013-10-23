@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Centering. Flex.</title>
+    <style>
+        html,
+        body
+        {
+            height: 100%;
+        }
+
+        body
+        {
+            overflow: hidden;
+            margin: 0;
+            color: #fff;
+            font: 18px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        h1
+        {
+            margin: 0 0 .5em;
+            font-size: 1.5em;
+        }
+
+        .block
+        {
+            overflow: auto;
+            padding: 30px;
+            max-height: 100%;
+            background: #006de1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block" contenteditable>
+        <h1>Flex</h1>
+        Editable...
+    </div>
+</body>
+</html>
