@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="4-1 3 Колонки" charset="utf-8"/>
+
+<title>4-1 3 Колонки</title>
+</head>
+
+<style>
+.header
+{
+    font: 1.25em/1.1 ;
+    text-align: center;
+}
+
+.first-column,
+.third-column
+{
+    width: 25%;
+    background: #ce0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.second-column
+{
+    background: #ff0;
+    width: 50%;           
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Красота*/
+
+.first-column,
+.second-column,
+.third-column
+{
+     margin: 0 0 0 -0.2em;
+}
+
+.header
+{
+    font: 2em/1.1 sans-serif;
+    text-decoration: underline;
+}
+
+.header:first-letter
+{
+    font: bold 1.2em/1.1 sans-serif;
+    color: red;
+}
+</style>
+<body>
+  <h1 class="header">Эй вы, трое</h1>
+  <div class="first-column">Dedicated Web Workers provide a simple means for web content to run scripts in background threads. Once created, a worker can send messages to the spawning task by posting messages to an event handler specified by the creator. However, they work within a global context different from the current window (using the window shortcut instead of self in order to get the current global scope within a Worker will return, in fact, an error).</div>
+  <div class="second-column">The worker thread can perform tasks without interfering with the user interface.  In addition, they can perform I/O using XMLHttpRequest (although the responseXML  and channel attributes are always null).</div>
+  <div class="third-column">See Worker for reference documentation on workers; this article complements that one by offering examples and added details. For a list of functions available to workers, see Functions and interfacex available to workers.</div>
+</body>
+</html>

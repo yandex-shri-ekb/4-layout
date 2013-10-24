@@ -9,16 +9,16 @@
 </head>
 
 <style>
-/* Рассматриваем 2 случай: ширина известна
-** Вариант 1: классически margin 0 auto (вариант хороший);
-*/
+.wrapper
+{
+    text-align: center;
+}
 
 .need-to-center
 {
-    background: green;
-    margin: auto;  
-    height: 60px;
-    width: 200px;         
+   display: inline-block;
+   height: 60px;
+   background: yellow;
 }
 /*Красота*/
 body
@@ -37,12 +37,11 @@ body
     font: bold 1.2em/1.1 sans-serif;
     color: red;
 }
-
 </style>
 <body>
   <h1 class="header">Всегда в центре</h1>
-  
-    <div class="need-to-center">Я в горизонтальном центре всего 2</div>
-
+  <div class="wrapper">
+    <div class="need-to-center">Я в центре всего</div>
+</div>
 </body>
 </html>

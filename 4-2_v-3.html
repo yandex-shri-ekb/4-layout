@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="2-2 Всегда в вертикальном центре" charset="utf-8"/>
+
+<title>Всегда в вертикальном центре</title>
+</head>
+
+<style>
+
+.outer:before
+{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.inner
+{
+    display: inline-block;
+    vertical-align: middle;
+    border:1px solid red;
+    background: #090;
+}
+
+.outer
+{
+    height: 100px;
+    width: 100%;
+    border:1px solid black;
+}
+
+</style>
+
+ 
+
+<div class="outer">
+  <span class="inner">
+    Центрированный<br>Элемент
+  </span>
+</div>
+
+</body>
+</html>
