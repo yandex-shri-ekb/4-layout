@@ -13,9 +13,5 @@ function toggleSpoiler() {
 
 function addContent() {
     var el = document.getElementsByClassName('pad')[0];
-    if(typeof(el.innerText) != 'undefined') {
-        el.innerText += ' Декскриптор.';
-    } else {
-        el.textContent += ' Декскриптор.';
-    }
+    el.innerHTML += ' Декскриптор.';
 }
