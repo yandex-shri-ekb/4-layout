@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="4-5 Ширина" charset="utf-8"/>
+<meta name="description" content="4-5 Самый широкий" charset="utf-8"/>
 
-<title>4-4 Двигайся, давай</title>
+<title>4-5 Самый широкий</title>
 </head>
 
 <style>
@@ -15,7 +15,6 @@
 body
 {
     font: 1.2em/1.1 sans-serif;
-    
 }
 
 .header
@@ -33,35 +32,39 @@ body
 
 .menu
 {
-  border: 1px red solid;
-  
-   
-   list-style-type: none;
-   
-  display: table;
+    list-style-type: none;
+    float: left;
+    min-width: 33%;
+    padding: 0;
 }
 
 .menu-item
 {
     white-space: nowrap;
     border: 1px green solid;
-    width: 30%;
-    
-    display: inline-block;
     position: relative;
-  
+    height: 25px;
+    background: #FCC;
+    text-align: center;
+    margin: 0 10px;
 }
-.first{
-  left: 0;
+
+.first
+{
+    left: 0;
+    top: 0;
 }
+
 .second
 {
-left: 100%;
+    left: 100%;
+    top: -27px;
 }
 
 .third
 {
-left: 200%;
+    left: 200%;
+    top: -54px;
 }
 </style>
 <body>
@@ -69,7 +72,6 @@ left: 200%;
 
   <ul class="menu">
     <li class="menu-item first">Первый</li>
-    
     <li class="menu-item second">ООООЧЕНЬ ДЛииииииный</li>
     <li class="menu-item third">третий</li>
   </ul>
