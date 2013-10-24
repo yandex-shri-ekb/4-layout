@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #ebebeb;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: #0093f0;
+}
+
+#page {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.content-wrap {
+    padding: 20px 0 120px;
+}
+
+.content {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+#footer {
+    height: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+    background: #525252;
+    text-align: center;
+    color: #fff;
+}
+
+body.absolute {
+    min-height: 100%;
+    height: auto;
+    position: relative;
+}
+
+.absolute #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.static #footer {
+    margin: -100px 0 0;
+}

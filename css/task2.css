@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+
+/* Вспомогательные стили */
+.pad {
+    padding: 15px;
+}
+
+.block {
+    background: #47c3d3;
+    color: #fff;
+    text-align: center;
+    overflow-y: auto
+}
+
+a.add-btn {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    background: #7ac143;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+a:hover.add-btn {
+    text-decoration: underline;
+}
+
+/* Выравнивание через margin */
+#task2-h-1 .block {
+    margin: 0 auto;
+    width: 200px;
+}
+
+/* Выравнивание по горизонтали через inline-block*/
+#task2-h-2 {
+    text-align: center;
+}
+
+#task2-h-2 .block {
+    width: 200px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+/* Выравнивание по горизонтали через позицирование */
+#task2-h-3 {
+    position: relative;
+}
+
+#task2-h-3 .block {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    margin: 0 0 0 -100px;
+}
+
+/* Выравнивание по горизонтали через позицирование */
+#task2-h-4  {
+    position: relative; /* совсем необязательно */
+}
+
+#task2-h-4 .block-outer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+#task2-h-4 .block {
+    position: relative;
+    top: 0;
+    left: -50%;
+}
+
+/* Выравнивание по вертикали с помощью позицирования и margin */
+#task2-v-1 .block {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100px;
+    margin: -50px 0 0;
+}
+
+/* Выравнивание по вертикали с помощью "растягивания" и auto margin'а */
+#task2-v-2 .block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    margin: auto;
+}
+
+/* Выравнивание по вертикали с помощью line-height */
+html.task2-v-3,
+.task2-v-3 body {
+    height: 100%;
+}
+
+#task2-v-3 {
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#task2-v-3:after {
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+#task2-v-3 .block {
+    width: 200px;
+    vertical-align: middle;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+#task2-v-4 {
+    text-align: center;
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#task2-v-4 .block {
+    display: table-cell;
+    vertical-align: middle;
+    background: none;
+}
+
+#task2-v-4 .block .pad {
+    background: #47c3d3;
+}
