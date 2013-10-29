@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>display: float</title>
+
+    <style type="text/css">
+        .container
+        {
+            width: 100%;
+            padding: 0;
+        }
+        .layout-1,
+        .layout-3,
+        .layout-2
+        {
+            padding: 10px 0;
+            vertical-align: top;
+            text-align: center;
+            font-size: 30px;
+        }
+        .layout-1
+        {
+            float: left;
+            width: 25%;
+            background-color: #fc0;
+        }
+        .layout-2
+        {
+            margin: 0 25%;
+            width: 50%;
+            background-color: #ff0000;
+        }
+        .layout-3
+        {
+            float: right;
+            width: 25%;
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Задание №1 (display: float)</h1>
+<p>
+    Данное решение сделано с использованием float
+</p>
+
+<ul>
+    <li>Минус: расположение блоков не совсем верное - центральный блок по коду идет последним</li>
+</ul>
+
+<a href="index.html">Вернуться назад</a>
+<br />
+<br />
+
+<div class="container">
+    <div class="layout-1">
+        Школа
+    </div>
+    <div class="layout-3">
+        интерфейсов
+    </div>
+    <div class="layout-2">
+        разработки
+    </div>
+
+</div>
+
+
+</body>
+</html>
