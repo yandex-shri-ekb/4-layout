@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+</head>
+<body>
+<style>
+    html,
+    body
+    {
+        margin: 0;
+        padding: 0;
+        font: 18px Calibri, sans-serif;
+        color: #2C3E50;
+    }
+
+    .container
+    {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content
+    {
+        position: relative;
+        display: table;
+        width: 33.33%;
+    }
+
+    .title
+    {
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        margin: 40px 0;
+    }
+
+    .green,
+    .yellow,
+    .pink
+    {
+        display: block;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        height: 30px;
+        padding: 15px 10px 10px;
+        margin: 0 0 0 15px;
+        white-space: nowrap;
+    }
+
+    .green
+    {
+        background: #1ABC9C;
+        left: 0;
+        top: 0;
+        margin: 0;
+
+    }
+
+    .yellow
+    {
+        background: #F1C40F;
+        color: #2C3E50;
+        left: 100%;
+        top: -54px;
+    }
+
+    .pink
+    {
+        background: #E74C3C;
+        left: 200%;
+        top: -109px;
+    }
+
+</style>
+<div class="container">
+    <a href="index.html">Вернуться к списку решений</a><br>
+    <span class="title">Задание №5* «Тройняшки мы»</span>
+    <div class="content">
+        <a href="#" class="green">коротенький</a>
+        <a href="#" class="yellow">подлиннее текст</a>
+        <a href="#" class="pink">это самый длинный текст</a>
+    </div>
+</div>
+</body>
+</html>
