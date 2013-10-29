@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task 4: Layout</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(function (){
+			var $container = $('#container'),
+				variants = {};
+
+			$('.variant-container .variant-list').each(function () {
+				variants[this.id] = $(this);
+			})
+
+			$('.subtask-container').on('click', 'a', onMenuChosen(function (result) {
+				for (var key in variants) {
+					if (key == result) {
+						variants[key].show();
+						variants[key].find('a').first().trigger('click');
+					}
+					else {
+						variants[key].hide()
+					}
+				}
+			}));
+
+			$('.variant-container').on('click', 'a', onMenuChosen(function (result) {
+				$container.attr('src', result);
+			}))
+
+			$('.subtask-list a').first().trigger('click');
+		})
+
+		function onMenuChosen(callback) {
+			return function (e) {
+				e.preventDefault();
+
+				var $this = $(this),
+					$li = $this.parent(),
+					val = $this.attr('href').substring(1);
+
+				$li.siblings('.menu-item-current')
+					.removeClass('menu-item-current');
+				$li.addClass('menu-item-current');
+
+				if (callback)
+					callback(val);
+			};
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div class="subtask-container">
+			<ul class="subtask-list menu-list">
+				<li class="subtask menu-item"><a href="#variant_list_1">Эй вы, трое</a></li>
+				<li class="subtask menu-item"><a href="#variant_list_2">Всегда в центре</a></li>
+				<li class="subtask menu-item"><a href="#variant_list_3">Подвал</a></li>
+				<li class="subtask menu-item"><a href="#">Двигайся, давай</a></li>
+				<li class="subtask menu-item"><a href="#">Тройняшки мы</a></li>
+			</ul>
+		</div>
+		<div class="variant-container">
+			<ul id="variant_list_1" class="variant-list menu-list">
+				<li class="variant menu-item"><a href="#task_1_01.html">table</a></li>
+				<li class="variant menu-item"><a href="#task_1_02.html">relative</a></li>
+				<li class="variant menu-item"><a href="#task_1_03.html">float</a></li>
+			</ul>
+			<ul id="variant_list_2" class="variant-list menu-list">
+				<li class="variant menu-item"><a href="#task_2_01.html">hor/fix width - margin:auto</a></li>
+				<li class="variant menu-item"><a href="#task_2_02.html">hor/fix width - position</a></li>
+				<li class="variant menu-item"><a href="#task_2_03.html">hor/flexible - position+float</a></li>
+			</ul>
+			<ul id="variant_list_3" class="variant-list menu-list">
+				<li class="variant menu-item"><a href="#task_3_01.html">Variant 1</a></li>
+				<li class="variant menu-item"><a href="#">Variant 2</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="x">
+		<iframe id="container" frameborder="0">
+		</iframe>
+	</div>
+</body>
+</html>

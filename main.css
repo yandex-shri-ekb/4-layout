@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font: 15px Arial,Helvetica,sans-serif;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+}
+#x {
+    height: 100%;
+    padding-top: 68px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*background: #a0c5bb;*/
+}
+#container {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0 0 -4px;
+}
+
+ul.menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+li.menu-item {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+
+.subtask-container,
+.variant-container {
+    border-bottom: 1px solid rgb(209, 208, 207);
+}
+li.subtask,
+li.variant {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+}
+li.subtask:hover,
+li.variant:hover {
+    border-color: green;
+}
+li.subtask.menu-item-current,
+li.variant.menu-item-current {
+    border-color: blue;
+}
+li.subtask a,
+li.variant a {
+    text-decoration: none;
+}
+
+.variant-container {
+    height: 28px;
+}
+ul.variant-list {
+    display: none;
+}
+li.variant {
+    padding: 5px 10px;
+}
