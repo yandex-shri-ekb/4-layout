@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+		<meta charset="utf-8">
+		<style>
+			html,
+			body
+			{
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			body
+			{
+				display: table;
+				width: 100%;
+				height: 100%;
+			}
+
+			h1
+			{
+				font: bold 24px Courier;
+				margin: 0;
+				padding: 20px 0;
+			}
+
+			.content
+			{
+				display: table-row;
+				font: normal 16px Arial;
+				text-align: center;
+				padding: 0 0 20px;
+			}
+
+			.text
+			{
+				display: block;
+				margin: 0 auto;
+				width: 650px;
+				background: #FFE7B8;
+			}
+
+			.footer
+			{
+				height: 100px;
+				width: 100%;
+				background: #A7C0DC;
+				display: table-row;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="text" contenteditable="true">
+				<h1>Table</h1>
+				Таблица
+			</div>
+		</div>
+		<div class="footer">
+			Подвал
+		</div>
+	</body>
+</html>

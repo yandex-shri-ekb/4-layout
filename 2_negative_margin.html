@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Negative margin</title>
+		<meta charset="utf-8">
+		<style>
+			html,
+			body
+			{
+				margin: 0;
+				height: 100%;
+				display: block;
+			}
+
+			h1
+			{
+				text-align: center;
+			}
+
+			.main
+			{
+				padding: 20px;
+				border: 1px solid #f00;
+				max-height: 90%;
+				max-width: 100%;
+				overflow: auto;
+				position: absolute;
+				width: 280px;
+				height: 120px;
+				top: 50%;
+				left: 50%;
+				margin-left: -160px;
+				margin-top: -80px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main" contenteditable="true">
+			<h1>Negative margin</h1>
+			для фиксированной длинны и ширины
+		</div>
+	</body>
+</html>

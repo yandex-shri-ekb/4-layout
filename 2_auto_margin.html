@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Auto margin</title>
+		<meta charset="utf-8">
+		<style>
+			html,
+			body
+			{
+				height: 100%;
+				display: block;
+			}
+
+			h1
+			{
+				text-align: center;
+			}
+
+			.main
+			{
+				padding: 20px;
+				border: 1px solid #f00;
+				max-height: 90%;
+				max-width: 100%;
+				overflow: auto;
+				position: absolute;
+				width: 280px;
+				height: 120px;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main" contenteditable="true">
+			<h1>Auto margin</h1>
+			для фиксированной ширины и высоты
+		</div>
+	</body>
+</html>
