@@ -1,5 +1,10 @@
 # 4-layout
 
+## Решение
+
+* [Исходный код](https://github.com/gogoleff/Yandex-IDS2013_4-layout/tree/master/solution)
+* [Демонстрация](https://rawgithub.com/gogoleff/Yandex-IDS2013_4-layout/master/solution/index.html)
+
 ## Модель отображения
 
 Четвёртое домашнее задание по курсу ШРИ: Модель отображения.

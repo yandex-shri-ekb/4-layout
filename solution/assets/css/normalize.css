@@ -1,0 +1,18 @@
+/* [Html and body] */
+
+/* Set default font */
+/* Remove default margin */
+body
+{
+    margin: 0;
+
+    font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* [Tables] */
+
+/* Remove spacing between <table> cells */
+table
+{
+    border-collapse: collapse;
+}
