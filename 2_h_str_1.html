@@ -5,17 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Задание №2: «Всегда в центре» — переменная высота — способ 1</title>
 <link rel="stylesheet" href="main.css">
-<script src="common.js"></script>
 <style>
 .table
 {
     display: table;
     position: absolute;
     top: 0;
-    left: 50%;
+    right: 20px;
     height: 100%;
-    width: 200px;
-    margin-left: -100px;
 }
 
 .cell
@@ -23,7 +20,6 @@
     display: table-cell;
     vertical-align: middle;
     overflow-y: auto;
-    text-align: center;
 }
 
 .content
@@ -36,7 +32,6 @@
 </head>
 <body>
     <div class="desc">
-        <p><span class="inc" onclick="addContent()">Добавить содержимое</span></p>
         <p>Для выравнивания блока переменной высоты по вертикали, нам понадобится два дополнительных контейнера.</p>
         <p>Самому старшему зададим абсолютное позиционирование, поведение таблицы, прилепим его к верху и зададим высоту
             в 100%.</p>
@@ -45,7 +40,7 @@
     </div>
     <div class="table">
         <div class="cell">
-            <div class="content" id="content">Швабра.</div>
+            <div class="content" contenteditable>Швабра.</div>
         </div>
     </div>
 </body>

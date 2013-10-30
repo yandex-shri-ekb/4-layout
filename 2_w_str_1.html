@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>Задание №2: «Всегда в центре» — непостоянная ширина — способ 1</title>
 <link rel="stylesheet" href="main.css">
-<script src="common.js"></script>
 <style>
 .container
 {
@@ -17,7 +16,6 @@
 .content
 {
     position: relative;
-    height: 200px;
     left: -50%;
     padding: 20px;
     overflow-y: auto;
@@ -28,7 +26,6 @@
 </head>
 <body>
     <div class="desc">
-        <p><span class="inc" onclick="addContent()">Добавить содержимое</span></p>
         <p>В данном случае нам потребуется дополнительный контейнер для блока.</p>
         <p>Контейнер мы смещаем влево на 50% относительно body, а вложенный в него блок на -50% влево уже относительно
             ширины контейнера.</p>
@@ -36,7 +33,7 @@
         <p>Работает в IE7.</p>
     </div>
     <div class="container">
-        <div class="content" id="content">Швабра.</div>
+        <div class="content" contenteditable>Швабра.</div>
     </div>
 </body>
 </html>
