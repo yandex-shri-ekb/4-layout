@@ -28,20 +28,26 @@
         .page
         {
             display: table;
+
             height: 100%;
+            width: 100%;
         }
 
         .wrap
         {
             display: table-cell;
+
+            width: 100%;
+
             vertical-align: middle;
+            text-align: center;
         }
 
-        .block
-         {
-            width: 50%;
+        /* Horizontal centering */
+        .wrap table
+        {
             margin: 0 auto;
-         }
+        }
 
 
         .ie6-7 .page,
@@ -74,17 +80,15 @@
         <div class="task-back-wrap"><a class="task-back" href="index.html">Вернуться</a></div>
 
         <div class="wrap">
-            <div class="block content-green">
-                <div class="text content-green">
-                    <p>Он  вынул  из  кармана  двадцатипятицентовую  монету.  И здесь мелкими
-                        четкими буквами те же лозунги,  а  на  оборотной стороне -- голова Старшего
-                        Брата. Даже с монеты преследовал тебя его взгляд. На монетах, на марках, на
-                        книжных обложках, на знаменах, плакатах, на сигаретных пачках  --  повсюду.
-                        Всюду  тебя  преследуют  эти глаза и обволакивает голос. Во сне и наяву, на
-                        работе и за едой, на улице и дома, в ванной, в постели -- нет спасения. Нет
-                        ничего твоего, кроме нескольких кубических сантиметров в черепе.</p>
+
+            <table><tr><td>
+                <div class="block content-green">
+                    <div class="text content-green">
+                        <p>Он  вынул  из  кармана  двадцатипятицентовую  монету.</p>
+                    </div>
                 </div>
-            </div>
+            </td></tr></table>
+
         </div>
 
     </div>
