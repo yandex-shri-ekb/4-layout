@@ -6,7 +6,7 @@
     overflow: hidden;
 
     height: 50px;
-    margin: 10px 0 20px;
+    margin: 0 0 20px;
 }
 
 .task-name-wrap:after,
@@ -99,7 +99,7 @@
 {
     clear: both;
 
-    padding: 0 20px 10px;
+    padding: 0 20px 30px;
 }
 
 .subtask-name
@@ -132,4 +132,9 @@
 .subtask-browsers
 {
     display: inline-block;
+}
+
+.subtask-warning
+{
+    color: #aaa;
 }
