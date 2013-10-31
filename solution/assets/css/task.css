@@ -31,7 +31,7 @@
     float: left;
 
     height: 50px;
-    padding: 0 20px;
+    padding: 0 40px;
 
     background: #ffd966;
 
@@ -113,7 +113,7 @@
 {
     display: inline-block;
 
-    margin: 0 20px 0 0;
+    margin: 0 20px 10px 0;
     padding: 10px 20px;
 
     text-decoration: none;

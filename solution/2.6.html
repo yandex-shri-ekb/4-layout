@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie7"><![endif]-->
+<!--[if gt IE 7]><!--> <html><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>#2.6 | 4-layout | Yandex.IDS.2013 | Gogolev Sergey</title>
+
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/task.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+
+    <style>
+
+        .task-back-wrap
+        {
+            position: absolute;
+        }
+
+        html,
+        body
+        {
+            height: 100%;
+        }
+
+        .page
+        {
+            text-align: center;
+
+            overflow: auto;
+            height: 100%;
+        }
+
+        .page:after,
+        .block
+        {
+            display: inline-block;
+
+            vertical-align: middle;
+        }
+
+        .page:after
+        {
+            content: '';
+            height: 100%;
+
+            margin-left: -0.25em; /* To offset spacing. May vary by font */
+        }
+
+        .block
+        {
+            width: 50%;
+            text-align: left;
+        }
+
+        .inlined
+        {
+            display: inline-block;
+
+            height: 100%;
+
+            vertical-align: middle;
+        }
+
+        /* Emulate inline-block for ie7 */
+        .ie7 .block,
+        .ie7 .inlined
+        {
+            display: inline;
+            zoom: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="task-back-wrap"><a class="task-back" href="index.html">Вернуться</a></div>
+
+    <div class="page">
+        <div class="block content-green">
+            <div class="text content-green">
+                <p>Он  вынул  из  кармана  двадцатипятицентовую  монету.  И здесь мелкими
+                    четкими буквами те же лозунги,  а  на  оборотной стороне -- голова Старшего
+                    Брата. Даже с монеты преследовал тебя его взгляд. На монетах, на марках, на
+                    книжных обложках, на знаменах, плакатах, на сигаретных пачках  --  повсюду.
+                    Всюду  тебя  преследуют  эти глаза и обволакивает голос. Во сне и наяву, на
+                    работе и за едой, на улице и дома, в ванной, в постели -- нет спасения. Нет
+                    ничего твоего, кроме нескольких кубических сантиметров в черепе.</p>
+            </div>
+        </div>
+        <div class="inlined"></div>
+    </div>
+
+
+</body>
+</html>
