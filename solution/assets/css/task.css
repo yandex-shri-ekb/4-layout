@@ -53,7 +53,6 @@
 
     /* antialiasing */
     -webkit-transform: rotate(360deg);
-    -moz-border-end-style: dotted;
 }
 
 .task-back,
@@ -86,6 +85,8 @@
     float: left;
 
     margin: 0 0 0 50px;
+
+    text-transform: uppercase;
 
     color: #000;
 
@@ -132,9 +133,13 @@
 .subtask-browsers
 {
     display: inline-block;
+
+    margin: 10px 0 0;
+
+    vertical-align: top;
 }
 
-.subtask-warning
+.subtask-notice
 {
     color: #aaa;
 }

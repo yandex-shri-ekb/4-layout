@@ -1,4 +1,4 @@
-/* [Elememts for example] */
+/* [Elements for example] */
 
 .text
 {
@@ -33,22 +33,17 @@
     background: #56ed9d;
 }
 
-.column-yellow
+.content-yellow
 {
     background: #fff3cd;
 }
 
-.column-blue
+.content-blue
 {
     background: #cdf6ff;
 }
 
-.column-green
+.content-green
 {
     background: #cdffe0;
-}
-
-.heighter
-{
-    height: 3000px;
 }
