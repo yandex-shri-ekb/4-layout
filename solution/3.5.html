@@ -17,7 +17,7 @@
         {
             display: flex;
 
-            min-height: 100vh;
+            min-height: 100vh; /* 100% of viewport height */
 
             flex-direction: column;
         }
@@ -33,7 +33,10 @@
 <body>
 
     <div class="page">
-        <div class="task-back-wrap"><a class="task-back" href="index.html">Вернуться</a></div>
+        <div class="task-header">
+            <a class="task-back" href="index.html">Вернуться</a>
+            <span class="task-header-item"><i>Firefox 22+, Chrome 21+</i></span>
+        </div>
     </div>
 
     <div class="footer content-green">

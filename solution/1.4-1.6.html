@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 6]><html class="ie6"><![endif]-->
+<!--[if IE 7]><html class="ie7"><![endif]-->
+<!--[if gt IE 7]><!--> <html><!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,9 +35,14 @@
             margin: 0 -.25em 0 0; /* Remove extra margin from inline-blocks elements */
 
             vertical-align: top;
+        }
 
-            *display: inline;
-            *zoom: 1;
+        .ie7 .display-inline .grid-col,
+        .ie6 .display-inline .grid-col
+        {
+            display: inline;
+            height: 1%;
+            zoom: 1;
         }
 
         /* Floats (IE6+) */
@@ -45,9 +52,10 @@
             float: left;
         }
 
-        .floats .grid-center
+        .ie7 .floats .grid-center,
+        .ie6 .floats .grid-center
         {
-            *margin: 0 -2px; /* Remove extra margin in IE7- */
+            *margin: 0 -2px; /* Remove extra margin */
         }
 
         /* Table cells (IE8+) */
@@ -62,7 +70,10 @@
 </head>
 <body>
 
-    <div class="task-back-wrap"><a class="task-back" href="index.html">Вернуться</a></div>
+    <div class="task-head clearfix">
+        <a class="task-back" href="index.html">Вернуться</a>
+        <span class="task-header-item"><i>Firefox, Chrome, IE6+ (table-cells IE8+)</i></span>
+    </div>
 
     <div class="clearfix display-inline">
 

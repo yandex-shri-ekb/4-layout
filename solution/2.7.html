@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7]><html class="ie7"><![endif]-->
-<!--[if gt IE 7]><!--> <html><!--<![endif]-->
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,36 +13,29 @@
 
     <style>
 
-        .task-back-wrap
+        .task-header
         {
             position: absolute;
         }
 
         html,
-        body
-        {
-            height: 100%;
-            width: 100%;
-        }
-
+        body,
         .page
         {
-
             height: 100%;
             width: 100%;
         }
 
-        .wrap
+        .cell
         {
             vertical-align: middle;
             text-align: center;
             width: 100%;
         }
 
-        /* Horizontal centering */
-        .wrap table
+        .center
         {
-            margin: 0 auto;
+            margin: 0 auto;  /* Horizontal centering */
             text-align: left;
         }
 
@@ -51,13 +43,17 @@
 
 </head>
 <body>
-    <div class="task-back-wrap"><a class="task-back" href="index.html">Вернуться</a></div>
+
+    <div class="task-header">
+        <a class="task-back" href="index.html">Вернуться</a>
+        <span class="task-header-item"><i>Firefox, Chrome, IE7+</i></span>
+    </div>
 
     <table class="page">
         <tr>
-            <td class="wrap">
+            <td class="cell">
 
-                <table><tr><td>
+                <table class="center"><tr><td>
                     <div class="block content-green">
                         <div class="text content-green">
                             <p>Он  вынул  из  кармана  двадцатипятицентовую  монету.</p>

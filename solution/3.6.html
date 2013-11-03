@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>#4 | 4-layout | Yandex.IDS.2013 | Gogolev Sergey</title>
+    <title>#3.6 | 4-layout | Yandex.IDS.2013 | Gogolev Sergey</title>
 
     <link href="assets/css/normalize.css" rel="stylesheet">
     <link href="assets/css/task.css" rel="stylesheet">
@@ -13,15 +13,18 @@
 
     <style>
 
-        .button
+        body
         {
-            float: left;
+            display: -ms-grid;
+            -ms-grid-columns: 100%;
+            -ms-grid-rows: minmax(100vh, max-content);
         }
 
-        .content
+        .footer
         {
-            width: 600px;
-            margin: 0 auto;
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            -ms-grid-row-align: end;
         }
 
     </style>
@@ -29,15 +32,15 @@
 </head>
 <body>
 
-    <div class="task-header">
-        <a class="task-back" href="index.html">Вернуться</a>
-        <span class="task-header-item"><i>Firefox, Chrome, IE8+</i></span>
+    <div class="page">
+        <div class="task-header">
+            <a class="task-back" href="index.html">Вернуться</a>
+            <span class="task-header-item"><i>IE10+</i></span>
+        </div>
     </div>
 
-    <div class="button button-yellow">Very ugly button</div>
-
-    <div class="content content-green">
-        <div class="text">
+    <div class="footer content-green">
+        <div class="text content-green">
             <p>Он  вынул  из  кармана  двадцатипятицентовую  монету.  И здесь мелкими
                 четкими буквами те же лозунги,  а  на  оборотной стороне -- голова Старшего
                 Брата. Даже с монеты преследовал тебя его взгляд. На монетах, на марках, на

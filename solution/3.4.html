@@ -13,8 +13,7 @@
 
     <style>
 
-        html,
-        body
+        html
         {
             height: 100%;
         }
@@ -22,10 +21,10 @@
         body
         {
             display: table;
+            height: 100%;
         }
 
-        .page,
-        .footer
+        .page
         {
             display: table-row;
             height: auto;
@@ -33,7 +32,8 @@
 
         .footer
         {
-            height: 1px;
+            display: table-row;
+            height: 0;
         }
 
     </style>
@@ -42,7 +42,10 @@
 <body>
 
     <div class="page">
-        <div class="task-back-wrap"><a class="task-back" href="index.html">Вернуться</a></div>
+        <div class="task-header">
+            <a class="task-back" href="index.html">Вернуться</a>
+            <span class="task-header-item"><i>Firefox, Chrome, IE8+</i></span>
+        </div>
     </div>
 
     <div class="footer content-green">
