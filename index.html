@@ -15,10 +15,18 @@
 			})
 
 			$('.subtask-container').on('click', 'a', onMenuChosen(function (result) {
+				var $anchor;
+
 				for (var key in variants) {
 					if (key == result) {
 						variants[key].show();
-						variants[key].find('a').first().trigger('click');
+						$anchor = variants[key].find('a').first();
+						if ($anchor.length > 0) {
+							$anchor.trigger('click');
+						}
+						else {
+							$container.attr('src', result);
+						}
 					}
 					else {
 						variants[key].hide()
@@ -58,7 +66,7 @@
 				<li class="subtask menu-item"><a href="#variant_list_1">Эй вы, трое</a></li>
 				<li class="subtask menu-item"><a href="#variant_list_2">Всегда в центре</a></li>
 				<li class="subtask menu-item"><a href="#variant_list_3">Подвал</a></li>
-				<li class="subtask menu-item"><a href="#">Двигайся, давай</a></li>
+				<li class="subtask menu-item"><a href="#variant_list_4">Двигайся, давай</a></li>
 				<li class="subtask menu-item"><a href="#">Тройняшки мы</a></li>
 			</ul>
 		</div>
@@ -75,7 +83,9 @@
 			</ul>
 			<ul id="variant_list_3" class="variant-list menu-list">
 				<li class="variant menu-item"><a href="#task_3_01.html">Variant 1</a></li>
-				<li class="variant menu-item"><a href="#">Variant 2</a></li>
+			</ul>
+			<ul id="variant_list_4" class="variant-list menu-list">
+				<li class="variant menu-item"><a href="#task_4.html">main</a></li>
 			</ul>
 		</div>
 	</div>
