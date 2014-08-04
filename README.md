@@ -53,7 +53,7 @@
   * [Спецификация CSS - Боксовая модель](http://www.w3.org/TR/CSS2/box.html)
   * [Спецификация CSS - Схемы позиционирования](http://www.w3.org/TR/CSS2/visuren.html)
   * [MDN](https://developer.mozilla.org/) - здесь всегда очень хорошие описания спецификации человеческим языком, в том числе поддержка свойств и особенности реализации
-  * [Хабрахабр - Подробно о flaot](http://habrahabr.ru/post/142486/)
+  * [Хабрахабр - Подробно о float](http://habrahabr.ru/post/142486/)
   * [Хабрахабр - То что вам никто не говорил про z-index](http://habrahabr.ru/post/166435/)
   * [Troubleshooting CSS](http://tympanus.net/codrops/2013/07/17/troubleshooting-css/) (или можно почитать перевод на Хабре [http://habrahabr.ru/post/189118/](Проблемы CSS))
   * [Принципы работы современных браузеров](http://www.html5rocks.com/ru/tutorials/internals/howbrowserswork/)
