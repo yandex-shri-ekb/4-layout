@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Centering. Translate.</title>
+    <style>
+        body
+        {
+            overflow: hidden;
+            margin: 0;
+            color: #fff;
+            font: 18px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1
+        {
+            margin: 0 0 .5em;
+            font-size: 1.5em;
+        }
+
+        .block
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            overflow-y: auto;
+            padding: 30px;
+            background: #006de1;
+            text-align: center;
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="block" contenteditable>
+        <h1>Translate</h1>
+        Editable...
+    </div>
+</body>
+</html>

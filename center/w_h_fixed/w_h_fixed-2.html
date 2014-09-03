@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Centering. Absolute.</title>
+    <style>
+        body
+        {
+            margin: 30px 0 0;
+            color: #fff;
+            font: 18px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        h1
+        {
+            margin: 0 0 .5em;
+            font-size: 1.5em;
+        }
+
+        .block
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: auto;
+            padding: 30px;
+            width: 300px;
+            height: 300px;
+            background: #006de1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block" contenteditable>
+        <h1>Absolute</h1>
+        Editable...
+    </div>
+</body>
+</html>

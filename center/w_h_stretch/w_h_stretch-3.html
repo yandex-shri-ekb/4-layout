@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Centering. Button.</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+
+        button
+        {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+        }
+
+        h1
+        {
+            margin: 0 0 .5em;
+            font-size: 1.5em;
+        }
+
+        .block
+        {
+            display: inline-block;
+            overflow: auto;
+            padding: 30px;
+            background: #006de1;
+            color: #fff;
+            font: 18px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <button disabled>
+        <div class="block">
+            <h1 contenteditable>Button</h1>
+            Editable...
+        </div>
+    </button>
+</body>
+</html>
