@@ -1,5 +1,48 @@
 # 4-layout
 
+## Solutions
+
+### #1
+
+1. [Table](https://rawgithub.com/sameoldmadness/4-layout/master/1_three_columns/table.html)
+2. [Float](https://rawgithub.com/sameoldmadness/4-layout/master/1_three_columns/float.html)
+3. [Table-cell](https://rawgithub.com/sameoldmadness/4-layout/master/1_three_columns/table-cell.html)
+
+### #2
+
+1. [Negative margin](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/negative_margin.html)
+2. [Zero offsets](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/zero_offsets.html)
+3. [Table](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/table.html)
+4. [Transform](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/transform.html)
+5. [Table-cell](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/table_cell.html)
+6. [Inline](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/inline.html)
+7. [Flexbox](https://rawgithub.com/sameoldmadness/4-layout/master/2_always_centered/flexbox.html)
+
+#### Links
+
+* [Absolute Horizontal And Vertical Centering In CSS](http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css)
+* [How to Center Anything With CSS](http://designshack.net/articles/css/how-to-center-anything-with-css/)
+* [Vertical Centering With CSS](http://blog.themeforest.net/tutorials/vertical-centering-with-css/)
+* [Vertical Centering in CSS](http://www.jakpsatweb.cz/css/css-vertical-center-solution.html)
+
+### #3
+
+1. [Flex](https://rawgithub.com/sameoldmadness/4-layout/master/3_sticky_footer/flex.html)
+2. [Absolute](https://rawgithub.com/sameoldmadness/4-layout/master/3_sticky_footer/absolute.html)
+
+#### Links
+
+* [Ryan Fait's HTML5 CSS Sticky Footer](http://ryanfait.com/html5-sticky-footer/)
+* [CSS Sticky Footer Layout](http://www.cssstickyfooter.com/)
+* [Sticky Footer](http://css-tricks.com/snippets/css/sticky-footer/)
+* [Tips and Tricks – Pure CSS Sticky Footers](http://blog.softlayer.com/2012/tips-and-tricks-pure-css-sticky-footers/)
+* [Modern Clean CSS “Sticky Footer”](http://mystrd.at/modern-clean-css-sticky-footer/)
+* [Sticky Footer. Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
+
+### #4
+
+### #5
+
 ## Модель отображения
 
 Четвёртое домашнее задание по курсу ШРИ: Модель отображения.
