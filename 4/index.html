@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Двигайся давай</title>
+    <style>
+        html,
+        body
+        {
+            margin: 0;
+        }
+
+        .fixed
+        {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin: 0 10px 0 0;
+            background: #f00;
+        }
+
+        .layout
+        {
+            margin: 0 auto;
+            max-width: 800px;
+            min-width: 600px;
+            background: #77f;
+            height: 500px;
+        }
+
+        .menu
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu li
+        {
+            display: inline;
+            float: left;
+            text-decoration: underline;
+            margin: 0 10px 0 0;
+        }
+
+        .content
+        {
+            clear: both;
+            color: #fff;
+            font-size: 30pt;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed"></div>
+    <div class="layout">
+        <ul class="menu">
+            <li>Главная</li>
+            <li>Вторая</li>
+            <li>Третья</li>
+        </ul>
+        <div class="content">
+            Содержимое
+        </div>
+    </div>
+</body>
+</html>

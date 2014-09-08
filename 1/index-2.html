@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Три колонки №2</title>
+    <style>
+        .layout
+        {
+            width: 100%;
+            display: table;
+        }
+
+        .col
+        {
+            min-height: 200px;
+            display: table-cell;
+        }
+
+        .col.left,
+        .col.right
+        {
+            width: 25%;
+            background: #f55;
+        }
+
+        .col.center
+        {
+            width: 50%;
+            background: #8bf;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="col left">Размеры также зависят от контента, поэтому при невозможности перенести содержимое на новую строку, колонка перестанет масштабироваться и нарушится пропорция (другие колонку будут масштабироваться)</div>
+        <div class="col center">table-cell не работает в IE<8</div>
+        <div class="col right">Колонки всегда одной высоты</div>
+    </div>
+</body>
+</html>
