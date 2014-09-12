@@ -1,0 +1,33 @@
+/* [body] */
+
+/* Remove default margin */
+/* Set default font */
+body
+{
+    margin: 0;
+
+    font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* [tables] */
+
+/* Remove spacing between <table> cells */
+table
+{
+    border-collapse: collapse;
+}
+
+/* [clearfix] */
+
+.clearfix:before,
+.clearfix:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.clearfix
+{
+    zoom: 1;
+}
