@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>display: inline-block</title>
+
+    <style type="text/css">
+        .container
+        {
+            font: 0px/0 a;
+        }
+        .layout-1,
+        .layout-3,
+        .layout-2
+        {
+            display: inline-block;
+            padding: 10px 0;
+            vertical-align: top;
+            text-align: center;
+            font-size: 30px;
+        }
+        .layout-1,
+        .layout-3
+        {
+            width: 25%;
+            background-color: #ffcc00;
+        }
+        .layout-2
+        {
+            width: 50%;
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Задание №1 (display: inline-block)</h1>
+<p>
+    Данное решение было реализовано при помощи сброса высоты строки, про которое рассказывали на лекции (font: 0px/0 a).
+</p>
+
+<ul>
+    <li>Минус: невозможность задать margin, padding, border и др. у блоков (которые приводят к увеличению ширины блока)</li>
+</ul>
+
+<a href="index.html">Вернуться назад</a>
+<br />
+<br />
+
+<div class="container">
+    <div class="layout-1">
+        Школа
+    </div>
+    <div class="layout-2">
+        разработки
+    </div>
+    <div class="layout-3">
+        интерфейсов
+    </div>
+</div>
+
+
+</body>
+</html>
