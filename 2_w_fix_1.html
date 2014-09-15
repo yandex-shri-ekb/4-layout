@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Задание №2: «Всегда в центре» — фикс. ширина — способ 1</title>
+<link rel="stylesheet" href="main.css">
+<style>
+.content
+{
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    top: 20px;
+    margin-left: -120px;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #eee;
+}
+</style>
+</head>
+<body>
+    <div class="desc">
+        <p>В случае, когда ширина блока фиксирована, всё очень просто — позиционируем его на расстоянии 50% слева
+            (справа) от ширины родителя, а затем задаём отрицательный левый (правый) внешний отступ в половину ширины
+            блока.</p>
+        <p>Можно наоборот — задать внешний отступ в 50%, а свойство <code>left</code> в минус половину ширины блока.</p>
+        <p>В данном случае <code>margin-left</code> и <code>left</code> абсолютно идентичны — они отсчитываются от левого края родительского элемента,
+            а их процентное значение берётся от ширины родительского блока.</p>
+        <p>Работает в IE7.</p>
+    </div>
+    <div class="content" contenteditable>Швабра.</div>
+</body>
+</html>

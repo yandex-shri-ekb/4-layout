@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Задание №2: «Всегда в центре» — фикс. высота — способ 1</title>
+<link rel="stylesheet" href="main.css">
+<style>
+.content
+{
+    position: absolute;
+    height: 160px;
+    top: 50%;
+    right: 20px;
+    margin-top: -100px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+    <div class="desc">
+        <p>В случае, когда высота блока фиксирована, всё очень просто — мы позиционируем блок на расстоянии 50%
+            сверху (снизу) от высоты родителя, а затем задаём отрицательный верхний (нижний) внешний отступ в половину
+            высоты блока.</p>
+        <p>В данном случае (в отличие от горизонтального случая), свойства <code>margin-top</code> и <code>top</code>,
+            не идентичны, посколько первое отсчитывается от ширины родителя, а не от его высоты, в отличие
+            от свойства <code>top</code>, которое отсчитывается от высоты родителя.</p>
+        <p>Cпособ работает в IE7.</p>
+    </div>
+    <div class="content" contenteditable>Швабра.</div>
+</body>
+</html>

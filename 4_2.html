@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Задание №4: «Двигайся, давай»</title>
+<style>
+.menu
+{
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu__square
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #f60;
+}
+
+.menu__container
+{
+    height: 100px;
+    *margin-right: 100px;
+}
+
+.menu__items
+{
+    list-style: none;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 100px;
+}
+
+.menu__item
+{
+    display: inline;
+    margin: 0 10px;
+}
+
+.content
+{
+    position: relative;
+    top: -100px;
+    width: 730px;
+    margin: 0 auto;
+    padding: 120px 35px 35px;
+    background: #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAAPCAMAAAArvFskAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5T/wDltzBKAAAArklEQVR42uzasQ6FIAxA0fr/P/0SIxV8wOBozx2wQyfDTVsg4gCwICLO5fwCBTb8tddn0VyQluXv4ft+tHUWEQQEeSmIHgv1BIln1JqtzGuCGEJQT5CI/+hRVS5BstECagzp964foiMrSpoz2ANUqSCzOtLnZOvVd11AGUEmUTeupydOsVB1SN+cZw0VhCAgyGYGIQgIsjzF8tQEhQzZPDVZ3IMAWHRRAWDDT4ABAMLsKm0J+Yy6AAAAAElFTkSuQmCC) no-repeat bottom;
+}
+</style>
+</head>
+<body>
+<div class="menu">
+    <div class="menu__square"></div>
+    <div class="menu__container">
+        <ul class="menu__items">
+            <li class="menu__item">
+                <a class="menu__link" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Вторая</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Третья</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    Работает в браузерах на базе WebKit, в IE8, даже в IE7, но в Firefox при ресайзе возникают глюки.<br><br>
+    Вероятно, это не самое лучшее решение, т.к. получается, что ширина меню всегда должна быть меньше ширины блока
+    с контентом на величину, равную ширине квадратика (800 &minus; 100 = 700px) — поэтому по бокам такие большие отступы.<br><br>
+    Если указать для меню большую ширину, то в IE7 это меню получается торчащим справа и появляется горизонтальный скролл.
+</div>
+</body>
+</html>

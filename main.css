@@ -1,0 +1,47 @@
+html,
+body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100%;
+}
+
+.desc
+{
+    position: absolute;
+    padding: 0 15px;
+    width: 400px;
+    z-index: 1;
+}
+
+.inc
+{
+    color: #00f;
+    border-bottom: 1px dashed #00f;
+    cursor: pointer;
+}
+
+
+.col-1
+{
+    background: #DFF0D8;
+    width: 25%;
+}
+
+.col-2
+{
+    background: #D9EDF7;
+    width: 50%;
+}
+
+.col-3
+{
+    background: #F2DEDE;
+    width: 25%;
+}
