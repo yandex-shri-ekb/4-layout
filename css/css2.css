@@ -1,0 +1,126 @@
+.page 
+{
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    zoom:1;
+    min-height: 100%;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #999 inset;
+    background: #efefef;
+    padding: 20px;
+}
+
+.page-inner 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.resizer 
+{
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 300px;
+    background: none;
+    border: none;
+    min-width: 10px;
+    min-height: 10px;
+}
+
+
+.t1-block 
+{
+    position: absolute;
+    top: 10px;
+    width: 480px;
+    padding: 20px 10px;
+    margin-left: -251px;
+    left: 50%;
+    border: 1px dashed #0f0;
+}
+
+
+.t2-block 
+{
+    position: absolute;
+    right: 50%;
+}
+
+.t2-inner 
+{
+    position: relative;
+    left: 50%;
+    padding: 20px 10px;
+    border: 1px dashed #0f0;
+}
+
+#t2-whitespace:checked ~ .page .t2-inner 
+{
+    white-space: nowrap;
+}
+
+
+.t3-wrapper 
+{
+    text-align: center;
+}
+
+.t3-block 
+{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: left;
+    padding: 20px 10px;
+    border: 1px dashed #0f0;
+}
+
+
+.t4-block 
+{
+    width: 300px;
+    padding: 20px 10px;
+    border: 1px dashed #0f0;
+    margin: 0 auto;
+}
+
+
+.t5-block 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    padding: 20px 10px;
+    border: 1px dashed #0f0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: -50px -100px;
+}
+
+
+.t6-block 
+{
+    vertical-align: middle;
+    display: inline-block;
+    padding: 20px 10px;
+    border: 1px dashed #0f0;
+    vertical-align: middle;
+    width: 100px;
+    margin: 20px;
+}
+
+.t6-helper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+}
