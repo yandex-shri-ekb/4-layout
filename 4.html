@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Двигайся, давай</title>
+	<meta name="author" content="Александр Сердитов, РГППУ"/>
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<link href="css/task4.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="left-block"></div>
+
+<div class="container">
+	<ul class="menu">
+		<li>Главная</li>
+		<li>Вторая</li>
+	</ul>
+	<div class="content">
+		<div class="block">
+			Используются плавающие блоки: для фиолетового блока и для блока с меню. Это более корректно отображается в FF, чем когда только левый блок является плавающим.
+			Решение проверено в WebKit. В FF при уменьшении ширины окна меню ведет себя довольно странно (наезжает на float), после того, как меню достигает края блока, оно начинает вести себя корректно, но при расширении левый отступ у меню остается прежним, как если бы там находился фиолетовый блок. Назовем это явление "призрачный блок".
+		</div>
+		<div class="helper"></div>
+	</div>
+</div>
+
+</body>
+</html>

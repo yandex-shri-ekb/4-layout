@@ -1,0 +1,48 @@
+body {
+    background: #ECF1F5;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #0F5A94;
+    padding: 20px 0 0;
+}
+
+.content {
+    min-height: 400px;
+    text-align: center;
+    display: table;
+    clear: left;
+}
+
+.content .block {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    float: left;
+}
+
+.menu li {
+    display: inline;
+    text-decoration: underline;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.left-block {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #CF354D;
+    margin: 20px 0 0;
+}

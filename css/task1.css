@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    color: #fff;
+}
+
+/* Совсем необязательно, но без padding'а текст смотрится ужасно */
+.col .pad {
+    padding: 10px;
+}
+
+/* Позицирование */
+#task1-1 {
+    position: relative;
+}
+
+#task1-1 .col {
+    min-height: 150px; /* на случай, если текста не будет*/
+    position: absolute;
+    top: 0;
+}
+
+#task1-1 .col.left {
+    left: 0;
+    width: 25%;
+    background: #fdb912;
+}
+
+#task1-1 .col.center {
+    background: #7ac143;
+    left: 25%;
+    right: 25%;
+}
+
+#task1-1 .col.right {
+    right: 0;
+    width: 25%;
+    background: #ef3e42;
+}
+
+/* Использование float */
+#task1-2 {
+    overflow: hidden;
+}
+
+#task1-2 .col {
+    float: left;
+}
+
+#task1-2 .col.left {
+    width: 25%;
+    background: #fdb912;
+}
+
+#task1-2 .col.center {
+    background: #7ac143;
+    width: 50%;
+}
+
+#task1-2 .col.right {
+    width: 25%;
+    background: #ef3e42;
+}
+
+/* Использование таблицы */
+/* padding */
+#task1-3 .col {
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* Использование float */
+#task1-3 .col.left {
+    width: 25%;
+    background: #fdb912;
+}
+
+#task1-3 .col.center {
+    background: #7ac143;
+    width: 50%;
+}
+
+#task1-3 .col.right {
+    width: 25%;
+    background: #ef3e42;
+}
+
+/* inline-block */
+#task1-4 {
+    font-size: 0; /* Убираем отображение пробелов между элементами div */
+}
+
+#task1-4 .col {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    display: inline-block;
+    zoom: 1; /* Включаем hasLayout для старых IE7, чтобы inline отображался как inline-block */
+    *display: inline;
+}
+
+#task1-4 .col.left {
+    width: 25%;
+    background: #fdb912;
+}
+
+#task1-4 .col.center {
+    background: #7ac143;
+    width: 50%;
+}
+
+#task1-4 .col.right {
+    width: 25%;
+    background: #ef3e42;
+}

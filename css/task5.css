@@ -1,0 +1,47 @@
+/*
+ * Скорее всего это не совсем то, что требуется, но это очень близко к требуемому
+ * Решение найдено здесь:
+ * http://css-live.ru/articles-css/ravnomernoe-vyravnivanie-blokov-po-shirine.html
+ */
+
+.menu {
+    font: 14px sans-serif;
+    text-align: justify;
+    color: #fff;
+
+    /* Обнуляем для родителя*/
+    line-height: 0;
+    font-size: 1px; /* 1px для Opera */
+
+    /* Лекарство для IE6-7*/
+    text-justify: newspaper;
+    zoom:1;
+    min-width: 350px; /* Избегаем слишком маленькой ширины в FF */
+}
+.menu:after {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+
+}
+.menu .button  {
+    background: #ef3e42;
+    width: 32%;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+
+    /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+
+    display: inline-block;
+    *display : inline; /* эмуляция inline-block для IE6-7 */
+    zoom : 1;
+}
