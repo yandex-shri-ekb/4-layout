@@ -1,0 +1,94 @@
+body
+{
+	padding: 0;
+	font-size: 0;
+	margin: 0;
+}
+
+table
+{
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+h1
+{
+	text-align: center;
+	font: normal 22px Helvetica;
+	color: #f00;
+}
+
+h2
+{
+	text-indent: 20px;
+	font: normal 18px Helvetica;
+}
+
+.col1,
+.col3,
+td:nth-child(n)
+{
+	font-size: 18px;
+	background: #D3DEF3;
+	width: 25%;
+}
+
+.col2,
+td:nth-child(2)
+{
+	font-size: 18px;
+	background: #E2EFD9;
+	width: 50%;
+}
+
+.v1
+{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	border: none;
+}
+
+.v2 .col1,
+.v2 .col2,
+.v2 .col3
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.v4 .col1,
+.v4 .col2,
+.v4 .col3
+{
+	float: left;
+}
+
+.v5
+{
+	position: relative;
+}
+
+.v5 .col1,
+.v5 .col2,
+.v5 .col3
+{
+	position: absolute;
+}
+
+.v5 .col2
+{
+	left: 25%;
+}
+
+.v5 .col3
+{
+	right: 0;
+}
+

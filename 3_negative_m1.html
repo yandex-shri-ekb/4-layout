@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Negative margin v1</title>
+		<meta charset="utf-8">
+		<style>
+			html,
+			body
+			{
+				margin: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			h1
+			{
+				font: bold 24px Courier;
+				margin: 0;
+				padding: 20px 0;
+			}
+
+			.content
+			{
+				font: normal 16px Arial;
+				margin: 0 auto;
+				min-height: 100%;
+				width: 650px;
+			}
+
+			.text
+			{
+				background: #FFE7B8;
+				text-align: center;
+				padding: 0 0 20px;
+			}
+
+			.content:after
+			{
+				content: '';
+				display: block;
+				height: 100px;
+			}
+
+			.footer
+			{
+				margin-top: -100px;
+				height: 100px;
+				width: 100%;
+				background: #A7C0DC;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="text" contenteditable="true">
+				<h1>Footer. Negative margin v1</h1>
+				Отрицательный margin подвала, фиксированная высота подвала
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</body>
+</html>
